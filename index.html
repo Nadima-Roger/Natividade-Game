@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Desafio da História — Natividade</title><link rel="stylesheet" href="style.css"></head>
+<body><main id="app">
+<section id="start" class="frame">
+<div class="brand"><img src="assets/trophy.svg" alt=""><div><small>PROGRAMA ESPECIAL</small><h1>DESAFIO DA HISTÓRIA</h1><b>NATIVIDADE • 1734</b></div></div>
+<div class="intro">12 perguntas sobre o contexto histórico de Natividade.<br>Chegue ao final e conquiste a pontuação máxima!</div>
+<button id="startBtn" class="bigbtn">▶ INICIAR DESAFIO</button>
+</section>
+
+<section id="game" class="frame hidden">
+<header><div class="logo-mini">DESAFIO<br><span>DA HISTÓRIA</span></div>
+<div class="money"><img src="assets/coin.svg" alt=""><span id="score">0</span></div>
+<div class="lives" id="lives"></div></header>
+<div class="meter"><span id="bar"></span></div>
+<div class="main">
+<div class="question-tag" id="counter">PERGUNTA 01</div>
+<div class="question" id="q"></div>
+<div class="answers" id="answers"></div>
+</div>
+<div class="lifelines">
+<button id="fifty"><img src="assets/scissors.svg" alt=""> 50/50</button>
+<button id="hint"><img src="assets/hint.svg" alt=""> DICA</button>
+<button id="swap"><img src="assets/swap.svg" alt=""> TROCAR</button>
+</div>
+<div class="message" id="msg" aria-live="polite"></div>
+<div class="prize-strip" id="prizes"></div>
+</section>
+
+<section id="result" class="frame hidden"></section>
+</main><script src="script.js"></script></body></html>
